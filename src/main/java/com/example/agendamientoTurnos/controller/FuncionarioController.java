@@ -1,5 +1,6 @@
 package com.example.agendamientoTurnos.controller;
 
+import com.example.agendamientoTurnos.DTO.FuncionarioRespuesta;
 import com.example.agendamientoTurnos.entity.Especialidad;
 import com.example.agendamientoTurnos.entity.Funcionario;
 import com.example.agendamientoTurnos.serviceUsuario.EspecialidadService;
@@ -25,9 +26,14 @@ public class FuncionarioController {
 
 
     @PostMapping
-    public Funcionario saveUpadate(@RequestBody Funcionario funcionario){
+    public FuncionarioRespuesta saveUpadate(@RequestBody Funcionario funcionario){
+
+        //FuncionarioRespuesta  funcionarioRespuesta=new FuncionarioRespuesta() ;
         funcionarioService.saveOrUpdate(funcionario);
-        return funcionario;
+        FuncionarioRespuesta  funcionarioRespuesta=new FuncionarioRespuesta(funcionario.getNombre(),
+                funcionario.getApellido(), funcionario.getGrado().getIdGrado(),funcionario.getEspecialidad().getIdEspecialidad()) ;
+
+        return funcionarioRespuesta;
     }
 
     @DeleteMapping("/{idFuncionario}")

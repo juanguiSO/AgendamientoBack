@@ -28,8 +28,6 @@ public class Vehiculo {
         @Column(name = "numeroasiento")
         private int numeroAsiento;
 
-        @OneToMany(mappedBy = "vehiculo")
-        private List<Viaje> viajes;
 
         // Getters y Setters
 }

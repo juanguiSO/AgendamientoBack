@@ -36,9 +36,9 @@ public class Funcionario {
     @JoinColumn(name = "id_especialidad")
     private Especialidad especialidad;
 
-    @OneToMany(mappedBy = "funcionario")
-    private List<Mision> misiones;
+   // @OneToMany(mappedBy = "funcionario")
+  //  private List<Mision> misiones;
 
-    // Getters y Setters
+
 }
 

@@ -23,8 +23,8 @@ public class Mision {
     @JoinColumn(name = "id_funcionario")
     private Funcionario funcionario;
 
-    @ManyToMany(mappedBy = "misiones")
-    private List<Viaje> viajes;
+    //@ManyToMany(mappedBy = "misiones")
+  //  private List<Viaje> viajes;
 
     // Getters y Setters
 }

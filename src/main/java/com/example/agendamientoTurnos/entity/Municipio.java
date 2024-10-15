@@ -15,8 +15,8 @@ public class Municipio {
     @Column(name = "municipio", length = 45)
     private String nombreMunicipio;
 
-    @OneToMany(mappedBy = "municipio")
-    private List<Viaje> viajes;
+ //   @OneToMany(mappedBy = "municipio")
+  //  private List<Viaje> viajes;
 
     // Getters y Setters
 }

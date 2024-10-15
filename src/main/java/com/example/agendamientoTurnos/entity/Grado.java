@@ -16,8 +16,8 @@ public class Grado {
     @Column(name = "grado", length = 45)
     private String grado;
 
-    @OneToMany(mappedBy = "grado")
-    private List<Funcionario> funcionarios;
+    //@OneToMany(mappedBy = "grado")
+    //private List<Funcionario> funcionarios;
 
     // Getters y Setters
 }

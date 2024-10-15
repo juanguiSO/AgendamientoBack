@@ -20,8 +20,5 @@ public class Usuario {
     @Column(name = "password", length = 45)
     private String password;
 
-    @OneToMany(mappedBy = "usuarioCrea")
-    private List<Viaje> viajesCreados;
 
-    // Getters y Setters
 }

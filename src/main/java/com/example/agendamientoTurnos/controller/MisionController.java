@@ -26,9 +26,9 @@ public class MisionController {
 
 
     @PostMapping
-    public Mision saveUpadate(@RequestBody Mision mision){
+    public void  saveUpadate(@RequestBody Mision mision){
         misionService.saveOrUpdate(mision);
-        return mision;
+        //return mision;
     }
 
     @DeleteMapping("/{numeroMision}")

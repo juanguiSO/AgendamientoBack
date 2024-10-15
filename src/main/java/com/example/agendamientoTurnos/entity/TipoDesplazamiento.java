@@ -16,8 +16,6 @@ public class TipoDesplazamiento {
     @Column(name = "descripcion", length = 45)
     private String descripcion;
 
-    @OneToMany(mappedBy = "tipoDesplazamiento")
-    private List<Viaje> viajes;
 
-    // Getters y Setters
+
 }

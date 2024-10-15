@@ -16,8 +16,8 @@ public class Especialidad {
     @Column(name = "especialidad", length = 45)
     private String especialidad;
 
-    @OneToMany(mappedBy = "especialidad")
-    private List<Funcionario> funcionarios;
+ //   @OneToMany(mappedBy = "especialidad")
+   // private List<Funcionario> funcionarios;
 
     // Getters y Setters
 }
